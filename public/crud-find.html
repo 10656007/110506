@@ -10,7 +10,7 @@
     
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/find.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap" rel="stylesheet">
@@ -18,17 +18,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
     
-    <title>測試用(搜尋)</title>
+    <title>養老院搜尋</title>
 
   </head>
 
   <body>
-
-    <div class="page-header" id="banner">
+      <nav class="navb">       
+    <div class="page-header2" id="banner">
         <h1><a><img id="img" src="../images/logo1.png"><small id="small">樂活網</small></a></h1>
+        <ul class="inline-block-nav">
+            
+            
+            <input type="button" value="首頁" onclick="location.href='./crud-loby.html'"
+            style="width:120px;height:40px;font-size:20px;">
+            <input type="button" value="政府資訊" onclick="location.href='https://1966.gov.tw/LTC/cp-4495-48857-201.html'"
+            style="width:120px;height:40px;font-size:20px;">
+            
+        </ul>
 		<!--要加圖片 <h1><a><img id="img" src=""><small id="small">樂活網</small></a></h1> -->
 	</div>
-
+</nav>
     <!-- <div class="fade-in title">
 		<div id="title">
 		<h1 class="centerTitle">專題報告110506</h1>
@@ -58,31 +67,108 @@
             <div class="form-box">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="form-group">
-                            <text>地區 </text>
-                                <div class="row">
-                                    <select input type="text" class="form-control input-lg" id="city" placeholder="選擇區域">
-                                            <option>請選擇你想住的地區</option>
-                                            <option>北投區</option>
-                                            <option>士林區</option>
-                                            <option>大同區</option>
-                                            <option>中山區</option>
-                                            <option>松山區</option>
-                                            <option>內湖區</option>
-                                            <option>萬華區</option>
-                                            <option>中正區</option>
-                                            <option>大安區</option>
-                                            <option>信義區</option>
-                                            <option>南港區</option>
-                                            <option>文山區</option>
-                            
-                                    </select>
-                                    
-                                    <div class="col-xs-6">
+                        <div class="form-group2">
+                            <label class="mLabels">地區</label>
+                            <div class="form-check">
+                                <select name="area" id="area">
+                                <option value="北投區">北投區</option>
+                                <option value="士林區">士林區</option>
+                                <option value="大同區">大同區</option>
+                                <option value="中山區">中山區</option>
+                                <option value="松山區">松山區</option>
+                                <option value="內湖區">內湖區</option>
+                                <option value="萬華區">萬華區</option>
+                                <option value="中正區">中正區</option>
+                                <option value="大安區">大安區</option>
+                                <option value="信義區">信義區</option>
+                                <option value="南港區">南港區</option>
+           
+                                </select>
+
+                                <!-- <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">北投區</label>                             
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">士林區</label>                             
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">大同區</label>                             
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">中山區</label>                              
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">松山區</label>                              
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">內湖區</label>                              
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">萬華區</label>                             
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">中正區</label>                              
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">大安區</label>                              
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">信義區</label>                             
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">南港區</label>                              
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">文山區</label> -->
+                              </div>
+                                    <div class="col-xs-61">
                                         <label class="mLabels">預算</label>
-                                        <input type="text" class="form-control" placeholder="輸入預算">
-                                    </div>
+                                        <select name="area" id="area">
+                                        <option value="15000">15000</option>
+                                        <option value="20000">20000</option>
+                                        <option value="25000">25000</option>
+                                        <option value="30000">30000</option>
+                                        <option value="35000">35000</option>
+                                        <option value="40000">40000</option>
+                                        <option value="45000">45000</option>
+                                        <option value="50000">50000</option>
+                                       
+                                        </select>
+                                        <select name="area" id="area">
+                                            <option value="15000">15000</option>
+                                            <option value="20000">20000</option>
+                                            <option value="25000">25000</option>
+                                            <option value="30000">30000</option>
+                                            <option value="35000">35000</option>
+                                            <option value="40000">40000</option>
+                                            <option value="45000">45000</option>
+                                            <option value="50000">50000</option>
+                                           
+                                            </select>
+                                        <!-- <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">0-5000</label> 
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">5000-10000</label>
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">10000-15000</label>                                     
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">15000-20000</label>                                            
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">20000-25000</label>                                       
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">25000-30000</label>                                           
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">30000以上</label>
+                                    </div> -->
+                                    <div class="type">
+                                        <label class="mLabels2">類別</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">安養</label> 
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">養護</label>
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">長照</label>
                                 </div>
+                                <div class="att">
+                                <label class="mLabels3">屬性</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">公立</label> 
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">私立</label> 
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">民營</label>
                         </div>
 
     <!-- Test Function -->
